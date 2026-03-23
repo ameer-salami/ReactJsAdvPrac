@@ -1,10 +1,11 @@
 import './App.css'
+import { TitleText } from './components/TitleText'
 
 function App() {
 
   return (
     <>
-        <h2>React js Proj</h2>
+        <TitleText color='#000'/>
     </>
   )
 }
