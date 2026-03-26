@@ -44,10 +44,8 @@ export const TitleText = ({color} : TextColor) => {
 
     // const workerInfo = useMemo(() => {name:"Malala"}, [])
     const workerInfo = useMemo<ChildInfo>(():ChildInfo => ({name:workerName}) , [workerName,counter])
-    // setCounter(1);
     return (
         <>
-            {/* <Child name='Asgar' /> */}
             <br />
             -- See console --
             <br />
@@ -59,11 +57,10 @@ export const TitleText = ({color} : TextColor) => {
             text color: {currentColor} &nbsp;&nbsp;&nbsp;<span style={colorStyle} >&nbsp;&nbsp;&nbsp;</span>
             <br />
             <Child userInf={workerInfo} nameChangeEventHandler={handleChildNameChangeCB} />
-            {/* <Child userInf={workerInfo} /> */}
             <br />
             <br />
             Title: &nbsp;
-            <input type="text" value={title} placeholder="type title" onChange={handleTextInput} />
+            <input type="text" value={title} placeholder="type a title" onChange={handleTextInput} />
             <h3>title: {title} </h3>
         </>
     )
